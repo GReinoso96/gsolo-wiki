@@ -22,8 +22,8 @@
     "stringsPtr": 328,
     "conditions": 0,
     "id": 8,
-    "title": "潜入！飛竜の巣",
-    "win": "飛竜の卵３つを納品",
+    "title": "Raid the Wyvern's Nest",
+    "win": "Deliver 3 Wyvern Eggs",
     "fail": "報酬金ゼロ\r\nタイムアップ",
     "description": "依頼主：宮廷の料理人\r\n飛竜の卵ってご存知ですか？\r\n竜の巣にあるという幻の珍味。\r\n是非、我が主に食べてほしい！\r\n３つ持ってきていただければ、\r\n十分な報酬を用意しましょう。",
     "localeName": "Forest and Hills"
