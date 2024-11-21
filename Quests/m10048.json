@@ -1,0 +1,1900 @@
+{
+  "monsterHP": 2,
+  "hrp": 0,
+  "onlineFlag": 0,
+  "bossSize": 100,
+  "difficulty": 3,
+  "spawnID": 0,
+  "bossSizeClass": 0,
+  "supplyType": 0,
+  "supplyMon": 0,
+  "supplyNum": 0,
+  "questData": {
+    "type": 1,
+    "questFlags": 0,
+    "stars": 3,
+    "fee": 1300,
+    "reward": 6450,
+    "cartCost": 2150,
+    "timeLimit": 90000,
+    "locale": 1,
+    "unk": 0,
+    "stringsPtr": 352,
+    "conditions": 0,
+    "id": 10048,
+    "title": "巨大龍の侵攻",
+    "win": "ラオシャンロンから砦を守れ",
+    "fail": "砦の崩壊　報酬金ゼロ\r\nタイムアップ",
+    "description": "依頼主：ココット村の村長\r\n老山龍と呼ばれる巨大な龍が、\r\nこの村の方角へ向かっておる。\r\n途中の砦でやつを止めねば、\r\n村は跡形もなくなってしまう。\r\n砦を、そして村を守るのじゃ！",
+    "localeName": "Fortress"
+  },
+  "startData": [
+    {
+      "stage": 14,
+      "unk": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "stage": 14,
+      "unk": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "stage": 14,
+      "unk": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "stage": 14,
+      "unk": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "supplyData": {
+    "supplies": [
+      {
+        "id": 506,
+        "amount": 1,
+        "name": "Map"
+      },
+      {
+        "id": 510,
+        "amount": 2,
+        "name": "Mini Whetstone"
+      },
+      {
+        "id": 510,
+        "amount": 2,
+        "name": "Mini Whetstone"
+      },
+      {
+        "id": 507,
+        "amount": 3,
+        "name": "First-aid Med."
+      },
+      {
+        "id": 507,
+        "amount": 3,
+        "name": "First-aid Med."
+      },
+      {
+        "id": 507,
+        "amount": 3,
+        "name": "First-aid Med."
+      },
+      {
+        "id": 508,
+        "amount": 2,
+        "name": "Ration"
+      },
+      {
+        "id": 508,
+        "amount": 2,
+        "name": "Ration"
+      },
+      {
+        "id": 70,
+        "amount": 10,
+        "name": "Huskberry"
+      },
+      {
+        "id": 75,
+        "amount": 10,
+        "name": "Normal S Lv3"
+      },
+      {
+        "id": 76,
+        "amount": 10,
+        "name": "Pierce S Lv1"
+      },
+      {
+        "id": 92,
+        "amount": 5,
+        "name": "Recov S Lv1"
+      },
+      {
+        "id": 32,
+        "amount": 1,
+        "name": "Lifepowder"
+      },
+      {
+        "id": 512,
+        "amount": 4,
+        "name": "Ballista S"
+      },
+      {
+        "id": 512,
+        "amount": 4,
+        "name": "Ballista S"
+      },
+      {
+        "id": 69,
+        "amount": 2,
+        "name": "Lg Barrel-Bomb+"
+      },
+      {
+        "id": 67,
+        "amount": 1,
+        "name": "Sm Barrel-Bomb+"
+      }
+    ]
+  },
+  "rewardData": [
+    {
+      "type": 32768,
+      "ptr": 0,
+      "rewards": [
+        {
+          "chance": 1,
+          "id": 441,
+          "amount": 1,
+          "name": "Commendation"
+        },
+        {
+          "chance": 25,
+          "id": 400,
+          "amount": 1,
+          "name": "Lao-Shan's Scale"
+        },
+        {
+          "chance": 25,
+          "id": 404,
+          "amount": 1,
+          "name": "Lao-Shan's Shell"
+        },
+        {
+          "chance": 15,
+          "id": 400,
+          "amount": 1,
+          "name": "Lao-Shan's Scale"
+        },
+        {
+          "chance": 5,
+          "id": 463,
+          "amount": 1,
+          "name": "Ruststone GS"
+        },
+        {
+          "chance": 5,
+          "id": 464,
+          "amount": 1,
+          "name": "Ruststone Hmr"
+        },
+        {
+          "chance": 5,
+          "id": 465,
+          "amount": 1,
+          "name": "Ruststone SnS"
+        },
+        {
+          "chance": 5,
+          "id": 466,
+          "amount": 1,
+          "name": "Ruststone Lan"
+        },
+        {
+          "chance": 5,
+          "id": 462,
+          "amount": 1,
+          "name": "Ruststone BG"
+        },
+        {
+          "chance": 5,
+          "id": 397,
+          "amount": 1,
+          "name": "Sm Lao-Shan Claw"
+        }
+      ]
+    },
+    {
+      "type": 16,
+      "ptr": 0,
+      "rewards": [
+        {
+          "chance": 100,
+          "id": 404,
+          "amount": 1,
+          "name": "Lao-Shan's Shell"
+        }
+      ]
+    },
+    {
+      "type": 17,
+      "ptr": 0,
+      "rewards": [
+        {
+          "chance": 7,
+          "id": 463,
+          "amount": 1,
+          "name": "Ruststone GS"
+        },
+        {
+          "chance": 7,
+          "id": 464,
+          "amount": 1,
+          "name": "Ruststone Hmr"
+        },
+        {
+          "chance": 7,
+          "id": 465,
+          "amount": 1,
+          "name": "Ruststone SnS"
+        },
+        {
+          "chance": 7,
+          "id": 466,
+          "amount": 1,
+          "name": "Ruststone Lan"
+        },
+        {
+          "chance": 7,
+          "id": 462,
+          "amount": 1,
+          "name": "Ruststone BG"
+        },
+        {
+          "chance": 65,
+          "id": 404,
+          "amount": 1,
+          "name": "Lao-Shan's Shell"
+        }
+      ]
+    },
+    {
+      "type": 18,
+      "ptr": 0,
+      "rewards": [
+        {
+          "chance": 5,
+          "id": 463,
+          "amount": 1,
+          "name": "Ruststone GS"
+        },
+        {
+          "chance": 5,
+          "id": 464,
+          "amount": 1,
+          "name": "Ruststone Hmr"
+        },
+        {
+          "chance": 5,
+          "id": 465,
+          "amount": 1,
+          "name": "Ruststone SnS"
+        },
+        {
+          "chance": 5,
+          "id": 466,
+          "amount": 1,
+          "name": "Ruststone Lan"
+        },
+        {
+          "chance": 5,
+          "id": 462,
+          "amount": 1,
+          "name": "Ruststone BG"
+        },
+        {
+          "chance": 75,
+          "id": 404,
+          "amount": 1,
+          "name": "Lao-Shan's Shell"
+        }
+      ]
+    },
+    {
+      "type": 19,
+      "ptr": 0,
+      "rewards": [
+        {
+          "chance": 50,
+          "id": 400,
+          "amount": 1,
+          "name": "Lao-Shan's Scale"
+        },
+        {
+          "chance": 50,
+          "id": 404,
+          "amount": 1,
+          "name": "Lao-Shan's Shell"
+        }
+      ]
+    },
+    {
+      "type": 20,
+      "ptr": 0,
+      "rewards": [
+        {
+          "chance": 50,
+          "id": 400,
+          "amount": 1,
+          "name": "Lao-Shan's Scale"
+        },
+        {
+          "chance": 50,
+          "id": 404,
+          "amount": 1,
+          "name": "Lao-Shan's Shell"
+        }
+      ]
+    }
+  ],
+  "scriptData": [
+    {
+      "opcode": 27,
+      "arg1": 0,
+      "arg2": 0,
+      "arg3": 0,
+      "desc": ""
+    },
+    {
+      "opcode": 2,
+      "arg1": 7,
+      "arg2": 1,
+      "arg3": 0,
+      "desc": "Slay 1 Lao-Shan Lung"
+    },
+    {
+      "opcode": 44,
+      "arg1": 1,
+      "arg2": 0,
+      "arg3": 0,
+      "desc": ""
+    },
+    {
+      "opcode": 11,
+      "arg1": 0,
+      "arg2": 0,
+      "arg3": 0,
+      "desc": ""
+    },
+    {
+      "opcode": 1,
+      "arg1": 0,
+      "arg2": 0,
+      "arg3": 0,
+      "desc": ""
+    },
+    {
+      "opcode": 65535,
+      "arg1": 0,
+      "arg2": 0,
+      "arg3": 0,
+      "desc": ""
+    },
+    {
+      "opcode": 45,
+      "arg1": 0,
+      "arg2": 0,
+      "arg3": 0,
+      "desc": ""
+    },
+    {
+      "opcode": 7,
+      "arg1": 0,
+      "arg2": 0,
+      "arg3": 0,
+      "desc": ""
+    },
+    {
+      "opcode": 30,
+      "arg1": 0,
+      "arg2": 0,
+      "arg3": 0,
+      "desc": ""
+    },
+    {
+      "opcode": 22,
+      "arg1": 0,
+      "arg2": 0,
+      "arg3": 0,
+      "desc": ""
+    },
+    {
+      "opcode": 24,
+      "arg1": 0,
+      "arg2": 0,
+      "arg3": 0,
+      "desc": ""
+    },
+    {
+      "opcode": 5,
+      "arg1": 10,
+      "arg2": 0,
+      "arg3": 0,
+      "desc": ""
+    },
+    {
+      "opcode": 6,
+      "arg1": 0,
+      "arg2": 0,
+      "arg3": 0,
+      "desc": ""
+    },
+    {
+      "opcode": 23,
+      "arg1": 0,
+      "arg2": 0,
+      "arg3": 0,
+      "desc": ""
+    },
+    {
+      "opcode": 26,
+      "arg1": 0,
+      "arg2": 0,
+      "arg3": 0,
+      "desc": ""
+    },
+    {
+      "opcode": 42,
+      "arg1": 0,
+      "arg2": 0,
+      "arg3": 0,
+      "desc": ""
+    },
+    {
+      "opcode": 65535,
+      "arg1": 0,
+      "arg2": 0,
+      "arg3": 0,
+      "desc": ""
+    },
+    {
+      "opcode": 45,
+      "arg1": 0,
+      "arg2": 0,
+      "arg3": 0,
+      "desc": ""
+    },
+    {
+      "opcode": 7,
+      "arg1": 1,
+      "arg2": 0,
+      "arg3": 0,
+      "desc": ""
+    },
+    {
+      "opcode": 30,
+      "arg1": 0,
+      "arg2": 0,
+      "arg3": 0,
+      "desc": ""
+    },
+    {
+      "opcode": 43,
+      "arg1": 0,
+      "arg2": 0,
+      "arg3": 0,
+      "desc": ""
+    },
+    {
+      "opcode": 26,
+      "arg1": 1,
+      "arg2": 0,
+      "arg3": 0,
+      "desc": ""
+    },
+    {
+      "opcode": 65534,
+      "arg1": 0,
+      "arg2": 0,
+      "arg3": 0,
+      "desc": ""
+    },
+    {
+      "opcode": 7,
+      "arg1": 2,
+      "arg2": 0,
+      "arg3": 0,
+      "desc": ""
+    },
+    {
+      "opcode": 5,
+      "arg1": 150,
+      "arg2": 0,
+      "arg3": 0,
+      "desc": ""
+    },
+    {
+      "opcode": 6,
+      "arg1": 0,
+      "arg2": 0,
+      "arg3": 0,
+      "desc": ""
+    },
+    {
+      "opcode": 31,
+      "arg1": 0,
+      "arg2": 0,
+      "arg3": 0,
+      "desc": ""
+    }
+  ],
+  "smallMons": {
+    "waves": []
+  },
+  "largeMons": [
+    {
+      "waveNum": 1,
+      "unk": 0,
+      "cachePtr": 556,
+      "dataPtr": 436,
+      "monsters": [
+        {
+          "id": 7,
+          "variant": 0,
+          "quantity": 1,
+          "strength": 1,
+          "stageId": 14,
+          "unk1": "0000000000000000000000000000000000000000",
+          "angle": 20025,
+          "pos": [
+            2400.0,
+            0.0,
+            11000.0
+          ],
+          "unk2": "00000000000000000000000000000000",
+          "name": "Lao-Shan Lung"
+        }
+      ],
+      "cacheData": [
+        7,
+        4294967295,
+        4294967295,
+        4294967295
+      ]
+    }
+  ],
+  "zoneData": [
+    {
+      "ptr": 0,
+      "zones": [
+        {
+          "targetStg": 11,
+          "pos": [
+            3700.0,
+            -20.0,
+            8060.0
+          ],
+          "size": [
+            500.0,
+            200.0
+          ],
+          "unk": "000000000000000000000000",
+          "targetPos": [
+            15500.0,
+            0.0,
+            23900.0
+          ],
+          "targetAngle": 49153
+        },
+        {
+          "targetStg": 12,
+          "pos": [
+            3850.0,
+            -20.0,
+            7000.0
+          ],
+          "size": [
+            300.0,
+            300.0
+          ],
+          "unk": "000000000000000000000000",
+          "targetPos": [
+            8000.0,
+            1150.0,
+            11600.0
+          ],
+          "targetAngle": 0
+        },
+        {
+          "targetStg": 14,
+          "pos": [
+            6400.0,
+            -20.0,
+            7100.0
+          ],
+          "size": [
+            300.0,
+            300.0
+          ],
+          "unk": "000000000000000000000000",
+          "targetPos": [
+            11600.0,
+            394.0,
+            13000.0
+          ],
+          "targetAngle": 9102
+        },
+        {
+          "targetStg": 28,
+          "pos": [
+            5200.0,
+            -20.0,
+            9300.0
+          ],
+          "size": [
+            200.0,
+            200.0
+          ],
+          "unk": "000000000000000000000000",
+          "targetPos": [
+            18700.0,
+            0.0,
+            23700.0
+          ],
+          "targetAngle": 40050
+        },
+        {
+          "targetStg": 30,
+          "pos": [
+            6300.0,
+            -20.0,
+            8460.0
+          ],
+          "size": [
+            500.0,
+            200.0
+          ],
+          "unk": "000000000000000000000000",
+          "targetPos": [
+            18130.0,
+            0.5,
+            21230.0
+          ],
+          "targetAngle": 49153
+        },
+        {
+          "targetStg": 31,
+          "pos": [
+            3850.0,
+            -20.0,
+            7000.0
+          ],
+          "size": [
+            300.0,
+            300.0
+          ],
+          "unk": "000000000000000000000000",
+          "targetPos": [
+            14500.0,
+            61.0,
+            13000.0
+          ],
+          "targetAngle": 32768
+        }
+      ]
+    },
+    {
+      "ptr": 0,
+      "zones": [
+        {
+          "targetStg": 10,
+          "pos": [
+            11360.0,
+            380.0,
+            13400.0
+          ],
+          "size": [
+            200.0,
+            200.0
+          ],
+          "unk": "000000000000000000000000",
+          "targetPos": [
+            5700.0,
+            11.0,
+            7100.0
+          ],
+          "targetAngle": 32768
+        }
+      ]
+    },
+    {
+      "ptr": 0,
+      "zones": [
+        {
+          "targetStg": 10,
+          "pos": [
+            18060.0,
+            -20.0,
+            20800.0
+          ],
+          "size": [
+            200.0,
+            500.0
+          ],
+          "unk": "000000000000000000000000",
+          "targetPos": [
+            5580.0,
+            7.5,
+            8440.0
+          ],
+          "targetAngle": 32768
+        }
+      ]
+    },
+    {
+      "ptr": 0,
+      "zones": [
+        {
+          "targetStg": 10,
+          "pos": [
+            19100.0,
+            -35.0,
+            23240.0
+          ],
+          "size": [
+            300.0,
+            500.0
+          ],
+          "unk": "000000000000000000000000",
+          "targetPos": [
+            5200.0,
+            4.0,
+            8600.0
+          ],
+          "targetAngle": 16384
+        }
+      ]
+    },
+    {
+      "ptr": 0,
+      "zones": [
+        {
+          "targetStg": 10,
+          "pos": [
+            16100.0,
+            -50.0,
+            23680.0
+          ],
+          "size": [
+            200.0,
+            200.0
+          ],
+          "unk": "000000000000000000000000",
+          "targetPos": [
+            4400.0,
+            2.5,
+            8050.0
+          ],
+          "targetAngle": 0
+        }
+      ]
+    },
+    {
+      "ptr": 0,
+      "zones": [
+        {
+          "targetStg": 31,
+          "pos": [
+            8450.0,
+            1600.0,
+            11600.0
+          ],
+          "size": [
+            200.0,
+            200.0
+          ],
+          "unk": "000000000000000000000000",
+          "targetPos": [
+            10400.0,
+            61.0,
+            10200.0
+          ],
+          "targetAngle": 55707
+        }
+      ]
+    },
+    {
+      "ptr": 0,
+      "zones": [
+        {
+          "targetStg": 10,
+          "pos": [
+            15000.0,
+            25.0,
+            12950.0
+          ],
+          "size": [
+            200.0,
+            200.0
+          ],
+          "unk": "000000000000000000000000",
+          "targetPos": [
+            4500.0,
+            -1.8,
+            7000.0
+          ],
+          "targetAngle": 0
+        },
+        {
+          "targetStg": 12,
+          "pos": [
+            10170.0,
+            25.0,
+            9800.0
+          ],
+          "size": [
+            200.0,
+            200.0
+          ],
+          "unk": "000000000000000000000000",
+          "targetPos": [
+            7600.0,
+            1700.0,
+            11600.0
+          ],
+          "targetAngle": 32768
+        }
+      ]
+    }
+  ],
+  "miniMapData": [
+    {
+      "pos": [
+        40200.0,
+        28700.0
+      ],
+      "unk1": 0,
+      "unk2": 0,
+      "unk3": [
+        15000.0,
+        15000.0,
+        0.0
+      ],
+      "unk4": 0
+    },
+    {
+      "pos": [
+        56400.0,
+        26300.0
+      ],
+      "unk1": 0,
+      "unk2": 0,
+      "unk3": [
+        15000.0,
+        15000.0,
+        0.0
+      ],
+      "unk4": 0
+    },
+    {
+      "pos": [
+        48700.0,
+        45200.0
+      ],
+      "unk1": 0,
+      "unk2": 0,
+      "unk3": [
+        25000.0,
+        25000.0,
+        0.0
+      ],
+      "unk4": 0
+    },
+    {
+      "pos": [
+        24000.0,
+        36900.0
+      ],
+      "unk1": 0,
+      "unk2": 0,
+      "unk3": [
+        25000.0,
+        25000.0,
+        0.0
+      ],
+      "unk4": 0
+    },
+    {
+      "pos": [
+        0.0,
+        21100.0
+      ],
+      "unk1": 0,
+      "unk2": 0,
+      "unk3": [
+        25000.0,
+        25000.0,
+        1710.0
+      ],
+      "unk4": 0
+    },
+    {
+      "pos": [
+        5800.0,
+        0.0
+      ],
+      "unk1": 0,
+      "unk2": 0,
+      "unk3": [
+        20000.0,
+        20000.0,
+        3500.0
+      ],
+      "unk4": 3280076800
+    },
+    {
+      "pos": [
+        12600.0,
+        15000.0
+      ],
+      "unk1": 0,
+      "unk2": 0,
+      "unk3": [
+        15000.0,
+        15000.0,
+        0.0
+      ],
+      "unk4": 0
+    }
+  ],
+  "gatherData": [
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": [
+        {
+          "pos": [
+            4950.0,
+            -12.0,
+            8630.0
+          ],
+          "size": 150.0,
+          "gatherID": 136,
+          "times": 255,
+          "type": 0,
+          "unk": 0
+        },
+        {
+          "pos": [
+            4550.0,
+            -12.0,
+            8630.0
+          ],
+          "size": 200.0,
+          "gatherID": 135,
+          "times": 10,
+          "type": 0,
+          "unk": 0
+        }
+      ]
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": [
+        {
+          "pos": [
+            6200.0,
+            -12.0,
+            5900.0
+          ],
+          "size": 130.0,
+          "gatherID": 136,
+          "times": 255,
+          "type": 0,
+          "unk": 0
+        },
+        {
+          "pos": [
+            6230.0,
+            -12.0,
+            5600.0
+          ],
+          "size": 200.0,
+          "gatherID": 135,
+          "times": 10,
+          "type": 0,
+          "unk": 0
+        }
+      ]
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    }
+  ],
+  "uniquesData": [
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": [
+        {
+          "id": 0,
+          "type": 16,
+          "pos": [
+            4830.0,
+            1.0,
+            6540.0
+          ],
+          "size": 300.0,
+          "angle": 32768
+        },
+        {
+          "id": 0,
+          "type": 3,
+          "pos": [
+            4910.0,
+            -12.0,
+            7270.0
+          ],
+          "size": 180.0,
+          "angle": 28672
+        }
+      ]
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": [
+        {
+          "id": 0,
+          "type": 17,
+          "pos": [
+            6555.0,
+            1700.0,
+            12270.0
+          ],
+          "size": 200.0,
+          "angle": 0
+        },
+        {
+          "id": 1,
+          "type": 17,
+          "pos": [
+            8003.0,
+            1700.0,
+            12270.0
+          ],
+          "size": 200.0,
+          "angle": 0
+        },
+        {
+          "id": 0,
+          "type": 24,
+          "pos": [
+            6950.0,
+            1700.0,
+            12200.0
+          ],
+          "size": 200.0,
+          "angle": 0
+        },
+        {
+          "id": 1,
+          "type": 24,
+          "pos": [
+            7620.0,
+            1700.0,
+            12200.0
+          ],
+          "size": 200.0,
+          "angle": 0
+        },
+        {
+          "id": 0,
+          "type": 25,
+          "pos": [
+            7290.0,
+            1700.0,
+            11960.0
+          ],
+          "size": 130.0,
+          "angle": 0
+        }
+      ]
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": [
+        {
+          "id": 0,
+          "type": 16,
+          "pos": [
+            5480.0,
+            -12.0,
+            6390.0
+          ],
+          "size": 300.0,
+          "angle": 49153
+        },
+        {
+          "id": 0,
+          "type": 3,
+          "pos": [
+            6200.0,
+            -12.0,
+            6300.0
+          ],
+          "size": 180.0,
+          "angle": 28672
+        }
+      ]
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": [
+        {
+          "id": 0,
+          "type": 17,
+          "pos": [
+            15245.0,
+            350.0,
+            21170.0
+          ],
+          "size": 200.0,
+          "angle": 0
+        },
+        {
+          "id": 1,
+          "type": 17,
+          "pos": [
+            13185.0,
+            598.0,
+            18884.0
+          ],
+          "size": 200.0,
+          "angle": 41871
+        },
+        {
+          "id": 0,
+          "type": 24,
+          "pos": [
+            10880.0,
+            490.0,
+            21330.0
+          ],
+          "size": 200.0,
+          "angle": 6736
+        },
+        {
+          "id": 1,
+          "type": 24,
+          "pos": [
+            10880.0,
+            330.0,
+            18710.0
+          ],
+          "size": 200.0,
+          "angle": 23302
+        },
+        {
+          "id": 0,
+          "type": 25,
+          "pos": [
+            16060.0,
+            900.0,
+            28830.0
+          ],
+          "size": 130.0,
+          "angle": 38230
+        }
+      ]
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    },
+    {
+      "ptr": 0,
+      "Nodes": []
+    }
+  ],
+  "progressStr": [
+    "戦いに勝利した！",
+    "戦いに勝利した！",
+    "拠点を護れなかった",
+    ""
+  ],
+  "campData": {
+    "localeId": 1,
+    "areaId": 10,
+    "unk1": 0,
+    "unk2": 0
+  }
+}

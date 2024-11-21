@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G Solo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <table id="1starTable">
+            <tr>
+                <th> 1-Star Quests</th>
+            </tr>
+        </table>
+        <table id="2starTable">
+            <tr>
+                <th> 2-Stars Quests</th>
+            </tr>
+        </table>
+        <table id="3starTable">
+            <tr>
+                <th> 3-Stars Quests</th>
+            </tr>
+        </table>
+    </section>
+</body>
+<script>
+    var localeNames = ['None', 'Fortress', 'Forest and Hills', 'Desert', 'Swamp', 'Volcano', 'Jungle', 'Castle Schrade', 'Battlegrounds', 'Great Arena', 'Small Arena'];
+
+    var difficulty = [ 'Low Rank', 'High Rank', ' G Rank', 'Training' ];
+
+    var oneStar = [
+        [ 1, 0 ],
+        [ 37, 0 ],
+        [ 2, 0 ],
+        [ 3, 0 ],
+        [ 38, 3 ],
+        [ 6, 0 ],
+        [ 10014, 6 ],
+        [ 7, 10014 ],
+        [ 10015, 0 ],
+        [ 4, 10015 ],
+        [ 11, 0 ],
+        [ 20, 0 ],
+        [ 21, 0 ],
+        [ 35, 0 ]
+    ];
+
+    var twoStar = [
+        [ 40, 0 ],
+        [ 28, 40 ],
+        [ 23, 0 ],
+        [ 16, 0 ],
+        [ 8, 0 ],
+        [ 10022, 0 ],
+        [ 18, 10022 ],
+        [ 10028, 0 ],
+        [ 5, 10028 ],
+        [ 39, 10028 ],
+        [ 10036, 0 ],
+        [ 10039, 0 ],
+        [ 10, 10039 ],
+        [ 12, 10039 ],
+        [ 14, 0 ],
+        [ 15, 14 ],
+        [ 24, 14 ],
+        [ 19, 0 ],
+        [ 47, 0 ],
+        [ 10030, 0 ],
+        [ 54, 10030 ]
+    ];
+
+    var threeStar = [
+        [ 10032, 0 ],
+        [ 10033, 80000 ],
+        [ 46, 10032 ],
+        [ 51, 10032 ],
+        [ 27, 10039 ],
+        [ 10040, 80000 ],
+        [ 45, 10039 ],
+        [ 10038, 80000 ],
+        [ 33, 0 ],
+        [ 10043, 0 ],
+        [ 26, 10043 ],
+        [ 31, 0 ],
+        [ 32, 31 ],
+        [ 42, 31 ],
+        [ 10046, 0 ],
+        [ 41, 10046 ],
+        [ 49, 10046 ],
+        [ 10041, 0 ],
+        [ 10042, 80000 ],
+        [ 10045, 0 ],
+        [ 55, 10045 ],
+        [ 10035, 0 ],
+        [ 43, 10035 ],
+        [ 50, 10035 ],
+        [ 44, 0 ],
+        [ 53, 10036 ],
+        [ 48, 0 ],
+        [ 10047, 10048 ],
+        [ 10048, 10048 ],
+        [ 52, 10048 ]
+    ];
+
+    var oneList = document.getElementById('1starTable');
+    var twoList = document.getElementById('2starTable');
+    var threeList = document.getElementById('3starTable');
+
+    const zeroPad = (num, places) => String(num).padStart(places, '0')
+
+    loadQuests(oneStar, oneList);
+    loadQuests(twoStar, twoList);
+    loadQuests(threeStar, threeList);
+
+    async function loadQuests(list, table) {
+        list.forEach(qst => {
+            var qstTr = document.createElement('tr');
+            var qstTd = document.createElement('td');
+            var qstLnk = document.createElement('a');
+            fetch('./Quests/m'+zeroPad(qst[0], 5)+'.json',
+                    {
+                    method: 'GET',
+                    mode: 'cors',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                }
+            )
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                qstLnk.href = '.\\quest.html?qid=' + zeroPad(data.questData.id, 5);
+                qstLnk.textContent = data.questData.title;
+                qstTd.appendChild(qstLnk);
+                qstTd.classList.add('sm-text');
+                if (qst[1]==80000) {
+                    var qsp = document.createElement('div');
+                    qsp.textContent += '\r\nRequires: Silver Crown';
+                    qstTd.appendChild(qsp);
+                }
+                if(qst[1]!=0&&qst[1]!=80000)
+                {
+                    fetch('./Quests/m'+zeroPad(qst[1], 5)+'.json',
+                            {
+                            method: 'GET',
+                            mode: 'cors',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            }
+                        }
+                    )
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error(`HTTP error! Status: ${response.status}`);
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        var qsp = document.createElement('div');
+                        qsp.textContent += '\r\nRequires: ' + data.questData.title;
+                        qstTd.appendChild(qsp);
+                    })
+                    .catch(error => {
+                        console.error('Error loading the JSON file:', error);
+                    });
+                } 
+            })
+            .catch(error => {
+                console.error('Error loading the JSON file:', error);
+            });
+
+            qstTr.appendChild(qstTd);
+            table.appendChild(qstTr);
+        });
+    };
+
+    async function fetchQuest(qid){
+        fetch('./Quests/m'+qid+'.json',
+                {
+                method: 'GET',
+                mode: 'cors',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            }
+        )
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+            return response.json(); // Parse the JSON data
+        })
+        .then(data => {
+            loadQuestData(data);
+        })
+        .catch(error => {
+            console.error('Error loading the JSON file:', error);
+        });
+    }
+
+</script>
+</html>
