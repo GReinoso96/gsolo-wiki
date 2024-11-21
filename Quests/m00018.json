@@ -22,8 +22,8 @@
     "stringsPtr": 340,
     "conditions": 0,
     "id": 18,
-    "title": "大地を泳ぐモンスター",
-    "win": "ドスガレオスの討伐",
+    "title": "Sand-Swimming Lord",
+    "win": "Slay the Cephadrome",
     "fail": "報酬金ゼロ\r\nタイムアップ",
     "description": "依頼主：オアシス村の村長\r\n村の者が、砂漠でモンスターの\r\n一団を見つけた。しかし後を\r\n追うと、その姿はなぜか消えて\r\nしまったという。一団のボスを\r\n探し、しとめてくれないか？",
     "localeName": "Desert"

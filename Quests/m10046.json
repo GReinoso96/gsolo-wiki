@@ -22,8 +22,8 @@
     "stringsPtr": 332,
     "conditions": 0,
     "id": 10046,
-    "title": "洞窟に潜む影",
-    "win": "フルフルの討伐",
+    "title": "The Shadow in the Cave",
+    "win": "Slay the Khezu",
     "fail": "報酬金ゼロ\r\nタイムアップ",
     "description": "依頼主：名門貴族の若き女当主\r\n領内の洞窟に、子供がひとり\r\n迷い込んだ。助けに行きたいの\r\nだが、おぞましい灰色の飛竜が\r\nいて、救助を出せないのだ…。\r\nどうにか、奴を狩って欲しい！",
     "localeName": "Swamp"

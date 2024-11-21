@@ -22,8 +22,8 @@
     "stringsPtr": 332,
     "conditions": 0,
     "id": 28,
-    "title": "最終兵器の燃料調達",
-    "win": "燃石炭10個を納品",
+    "title": "Re-Supply the Dragonator",
+    "win": "Deliver 10 Coal",
     "fail": "報酬金ゼロ\r\nタイムアップ",
     "description": "依頼主：砦の兵士長\r\n我々の砦では、対飛竜用の最終\r\n兵器として、蒸気で動く大槍を\r\n建設中だ。だが、これを動かす\r\nには燃石炭という鉱石がいる。\r\n燃石炭を１５個集めてほしい。",
     "localeName": "Volcano"

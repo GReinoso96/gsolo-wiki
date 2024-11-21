@@ -22,8 +22,8 @@
     "stringsPtr": 340,
     "conditions": 0,
     "id": 10047,
-    "title": "一対の巨影",
-    "win": "リオレイア、リオレウスの討伐",
+    "title": "A Troublesome Pair",
+    "win": "Slay the\r\nRathalos and Rathian",
     "fail": "報酬金ゼロ\r\nタイムアップ",
     "description": "依頼主：ココット村の村長\r\nまったく、立派になりおって。\r\nこれは、ワシからの挑戦じゃ！\r\n巨大な２頭の飛竜、リオレウス\r\nとリオレイア。果たしてヌシは\r\n両者を屈服させられるかな？",
     "localeName": "Swamp"

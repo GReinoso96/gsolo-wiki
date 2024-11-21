@@ -22,8 +22,8 @@
     "stringsPtr": 336,
     "conditions": 0,
     "id": 19,
-    "title": "湿地帯の異変",
-    "win": "ブルファンゴ１５頭の討伐",
+    "title": "Trouble in the Swamp",
+    "win": "Slay 15 Bullfango",
     "fail": "報酬金ゼロ\r\nタイムアップ",
     "description": "依頼主：沼地の採掘者\r\n沼地に住む動物が、最近は妙に\r\n殺気立ってる。特に大イノシシ\r\nのブルファンゴは手に負えん。\r\n奴らを１５頭ほど狩ることに\r\nなってな。手を貸してくれ。",
     "localeName": "Swamp"

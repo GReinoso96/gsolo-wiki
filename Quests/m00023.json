@@ -22,8 +22,8 @@
     "stringsPtr": 332,
     "conditions": 0,
     "id": 23,
-    "title": "灰水晶の原石を採掘せよ！",
-    "win": "灰水晶の原石３つを納品",
+    "title": "Get me Sootstone Ore!",
+    "win": "Deliver 3 Sootstone Ore",
     "fail": "報酬金ゼロ\r\nタイムアップ",
     "description": "依頼主：欲深な豪商\r\n私は、宝石に目がなくてね。\r\n灰水晶という名の宝石の\r\n原石が、このあたりで採れる\r\nらしいじゃないか。３つも\r\n持ってくれば、報酬を渡そう。",
     "localeName": "Swamp"

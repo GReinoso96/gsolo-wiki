@@ -22,8 +22,8 @@
     "stringsPtr": 344,
     "conditions": 0,
     "id": 42,
-    "title": "ドスイーオスを狩れ！",
-    "win": "ドスイーオス３頭の討伐",
+    "title": "Slay the Iodrome!",
+    "win": "Slay 3 Iodrome",
     "fail": "報酬金ゼロ\r\nタイムアップ",
     "description": "依頼主：密林地帯の有力者\r\nドスイーオス３頭を中心とした\r\nモンスターの群れが、この所の\r\n大きな脅威となっておる。\r\n３頭のボスどもを倒し、密林に\r\n平穏を取り戻してもらえぬか？",
     "localeName": "Jungle"

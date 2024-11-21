@@ -22,8 +22,8 @@
     "stringsPtr": 352,
     "conditions": 0,
     "id": 10048,
-    "title": "巨大龍の侵攻",
-    "win": "ラオシャンロンから砦を守れ",
+    "title": "A Giant Dragon Invades",
+    "win": "Defend the Fort\r\nfrom Lao-Shan Lung",
     "fail": "砦の崩壊　報酬金ゼロ\r\nタイムアップ",
     "description": "依頼主：ココット村の村長\r\n老山龍と呼ばれる巨大な龍が、\r\nこの村の方角へ向かっておる。\r\n途中の砦でやつを止めねば、\r\n村は跡形もなくなってしまう。\r\n砦を、そして村を守るのじゃ！",
     "localeName": "Fortress"

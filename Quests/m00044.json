@@ -22,8 +22,8 @@
     "stringsPtr": 336,
     "conditions": 0,
     "id": 44,
-    "title": "飛竜の卵、奪取作戦！",
-    "win": "飛竜の卵３つを納品",
+    "title": "Wyvern Egg Hunt",
+    "win": "Deliver 3 Wyvern Eggs",
     "fail": "報酬金ゼロ\r\nタイムアップ",
     "description": "依頼主：宮廷の料理人\r\n飛竜の卵ってご存知ですか？\r\n以前これを使った料理を作って\r\nみたら、大好評だったんです！\r\n新しい調理法に挑戦するため、\r\n卵を３つ納品してください！",
     "localeName": "Jungle"

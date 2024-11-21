@@ -22,8 +22,8 @@
     "stringsPtr": 336,
     "conditions": 0,
     "id": 31,
-    "title": "イーオス討伐作戦",
-    "win": "イーオス２０頭の討伐",
+    "title": "Ioprey Hunting",
+    "win": "Slay 20 Ioprey",
     "fail": "報酬金ゼロ\r\nタイムアップ",
     "description": "依頼主：鉱山の所有者\r\n鉱山で採掘をしていたら、穴の\r\n奥から大量のイーオスがわいて\r\nきた！奴らの巣にぶつかった\r\nらしいんだ。イーオスを２０頭\r\n狩れば、作業が再開するのに！",
     "localeName": "Volcano"

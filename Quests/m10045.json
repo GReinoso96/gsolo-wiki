@@ -22,8 +22,8 @@
     "stringsPtr": 336,
     "conditions": 0,
     "id": 10045,
-    "title": "死闘！角竜ディアブロス",
-    "win": "ディアブロスの討伐",
+    "title": "The Runaway Diablos",
+    "win": "Slay the Diablos",
     "fail": "報酬金ゼロ\r\nタイムアップ",
     "description": "依頼主：国境警備隊隊長\r\n国境付近に設けられた防壁を\r\n破壊した巨竜が、この地方に\r\n逃げ込んでいる。放っておけば\r\nさらなる被害は免れられない。\r\nただちに発見し、討伐せよ！",
     "localeName": "Desert"

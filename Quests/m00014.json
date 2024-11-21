@@ -22,8 +22,8 @@
     "stringsPtr": 340,
     "conditions": 0,
     "id": 14,
-    "title": "ゲネポス討伐作戦！",
-    "win": "ゲネポス２０頭の討伐",
+    "title": "Slay the Genprey!",
+    "win": "Slay 20 Genprey",
     "fail": "報酬金ゼロ\r\nタイムアップ",
     "description": "依頼主：怪我をした兵士長\r\nだめだ、まだ体が動かねえ…。\r\n砂漠に棲む肉食モンスターの\r\nゲネポスには、敵を麻痺させる\r\n力がある。俺たちの代わりに、\r\n奴らを２０頭倒してくれよ！",
     "localeName": "Desert"
