@@ -72,12 +72,13 @@
 
     var localeNames = ['None', 'Fortress', 'Forest and Hills', 'Desert', 'Swamp', 'Volcano', 'Jungle', 'Castle Schrade', 'Battlegrounds', 'Great Arena', 'Small Arena'];
 
-    var rewardTypes = [ 'Base', 'Break Monster Part', "Break Rathian's Head", "Break Rathian's Wing", "Break Rathalos' Head", "Break Rathalos' Wing" ];
+    var rewardTypes = [ 'Base', 'Break Monster Part', "Break Rathian's Head", "Break Rathian's Wing", "Break Rathalos' Head", "Break Rathalos' Wing", "Unk", "Unk", "Unk", "Unk", "Break Kut-Ku's Ears", "Additional 1", "Additional 2", "Additional 3", "Additional 4", "Additional 5", "Break Lao's Horn", "Break Lao's Head", "Break Lao's Back", "Break Lao's Right Shoulder", "Break Lao's Left Shoulder", "Deliver 0", "Deliver 5", "Deliver 10", "Deliver 15", "Deliver 20", "Unk", "Unk", "Unk", "Unk", "Unk", "Unk", "Unk", "Unk", "Unk", "Unk", "Additional 1", "Additional 2", "Additional 3", "Additional 4", "Additional 5" ];
 
     var difficulty = [ 'Low Rank', 'High Rank', ' G Rank', 'Training' ];
 
     var stageName = [ 'None', 'Jungle 3', 'Jungle 1', 'Jungle 7', 'Jungle BC', 'Jungle 5', 'Swamp 3', 'Desert Secret', 'Battleground BC', 'Swamp 5', 'Fortress BC', 'Fortress 2', 'Fortress 5', 'NA', 'Fortress 1', 'NA', 'Swamp 1', 'NA', 'Jungle 4', 'Jungle 6', 'Schrade BC', 'FnH BC', 'Jungle 9', 'Jungle 10', 'NA', 'Schrade 1', 'Jungle 8', 'NA', 'Fortress 3', 'NA', 'Fortress 4', 'Fortress 6', 'FnH 6', 'FnH 3', 'FnH 10', 'FnH 8', 'FnH 9', 'FnH 4', 'FnH 2', 'FnH 1', 'FnH 5', 'FnH 7', 'FnH 11', 'FnH 12', 'Swamp 4', 'Desert 2', 'Jungle 2', 'Desert 6', 'Desert 9', 'Desert 8', 'Desert BC', 'Desert 1', 'Desert 4', 'Desert 10', 'Desert 5', 'Desert 11', 'Desert 7', 'Desert 3', 'Volcano 2', 'Volcano 4', 'Volcano 5', 'Volcano BC', 'Volcano 8', 'Volcano 1', 'Volcano 3', 'Volcano 6', 'Volcano 7', 'Swamp BC', 'Swamp 2', 'Swamp 9', 'Swamp 8', 'Swamp 10', 'Swamp 6', 'Swamp 11', 'Swamp Secret', 'Swamp 7', 'Minegarde Center', 'Guild Tavern', 'Market', 'Smithy', 'Guest House', 'Pawn Room', 'Rook Room', 'Bishop Room', 'Queen Room', 'King Room', 'Kokoto Room', 'Kokoto', 'Battleground 1', 'Arena BC', 'Great Arena', 'Small Arena' ];
 
+    var questTypes = ["Unknown", "Hunting", "Gathering", "Unk", "Capturing", "Unk", "Unk", "Unk", "Unk", "Special", "Unk", "Unk", "Unk", "Unk", "Unk", "Unk", "Unk", "Huntaton"];
     if(questID){
         fetch('./Quests/m'+questID+'.json',
                 {
@@ -105,7 +106,7 @@
     }
 
     function loadQuestData(quest) {
-        document.getElementById("qstTitle").textContent = quest.questData.title + ' ' + quest.questData.stars + '-★\r\n' + localeNames[quest.questData.locale] + ' - ' + difficulty[quest.difficulty];
+        document.getElementById("qstTitle").textContent = quest.questData.title + ' ' + quest.questData.stars + '-★\r\n' + localeNames[quest.questData.locale] + ' - ' + difficulty[quest.difficulty] + '\r\n' + questTypes[quest.questData.type] + ' Quest';
         document.getElementById("qstWin").textContent = quest.questData.win;
         document.getElementById("qstFail").textContent = quest.questData.fail;
         document.getElementById("qstFee").textContent = quest.questData.fee + 'z';
@@ -131,7 +132,11 @@
             if (rewType == 32768) { rewType = 0 };
             var typeTr = document.createElement('tr');
             var typeTd = document.createElement('th');
-            typeTd.textContent = rewardTypes[rewType];
+            if(rewType>241&&rewType<260) {
+                typeTd.textContent = "Slay " + (rewType-241) + ' or more';
+            } else {
+                typeTd.textContent = rewardTypes[rewType];
+            }
             typeTr.appendChild(typeTd);
             rewardList.appendChild(typeTr);
             element.rewards.forEach(rew => {
