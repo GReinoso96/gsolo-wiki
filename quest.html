@@ -178,7 +178,12 @@
         });
 
         // Large Monsters
-        document.getElementById('bossData').textContent = 'Size Mult: ' + quest.bossSize + '% Size Class: ' + quest.bossSizeClass + '\r\nHealth Mult: ' + quest.monsterHP;
+        var bossData = document.getElementById('bossData');
+        bossData.textContent = 'Size Mult: ' + quest.bossSize + '% Size Class: ' + quest.bossSizeClass + '\r\nLevel: ' + quest.monsterHP ;
+        var randLevelFlag = (quest.questData.questFlags >> 6) & 1;
+        if(randLevelFlag==1) {
+            bossData.textContent += "\r\nLevel randomness enabled"
+        }
         var lMonList = document.getElementById('largeMonTable');
         quest.largeMons.forEach(element => {
             var waveTr = document.createElement('tr');
@@ -195,6 +200,10 @@
                 lMonList.appendChild(monTr);
             });
         });
+
+        var test = (quest.questData.questFlags >> 6) & 1;
+
+        console.log(test);
     }
 
     function findGetParameter(parameterName) {

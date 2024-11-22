@@ -1,5 +1,5 @@
 {
-  "monsterHP": 2,
+  "monsterHP": 0,
   "hrp": 0,
   "onlineFlag": 0,
   "bossSize": 100,
@@ -11,7 +11,7 @@
   "supplyNum": 0,
   "questData": {
     "type": 1,
-    "questFlags": 0,
+    "questFlags": 64,
     "stars": 3,
     "fee": 1300,
     "reward": 6450,
