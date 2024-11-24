@@ -10,17 +10,22 @@
     <section>
         <table id="1starTable">
             <tr>
-                <th> 1-Star Quests</th>
+                <th> 1-Star Quests (LR)</th>
             </tr>
         </table>
         <table id="2starTable">
             <tr>
-                <th> 2-Stars Quests</th>
+                <th> 2-Stars Quests (LR)</th>
             </tr>
         </table>
         <table id="3starTable">
             <tr>
-                <th> 3-Stars Quests</th>
+                <th> 3-Stars Quests (LR)</th>
+            </tr>
+        </table>
+        <table id="4starTable">
+            <tr>
+                <th> 4-Stars Quests (HR)</th>
             </tr>
         </table>
     </section>
@@ -30,12 +35,14 @@
     var oneList = document.getElementById('1starTable');
     var twoList = document.getElementById('2starTable');
     var threeList = document.getElementById('3starTable');
+    var fourList = document.getElementById('4starTable');
 
     const zeroPad = (num, places) => String(num).padStart(places, '0')
 
     loadQuests(oneStar, oneList);
     loadQuests(twoStar, twoList);
     loadQuests(threeStar, threeList);
+    loadQuests(fourStar, fourList);
 
     async function loadQuests(list, table) {
         list.forEach(qst => {
