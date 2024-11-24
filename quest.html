@@ -63,6 +63,7 @@
         </table>
     </section>
 </body>
+<script type="text/javascript" src=".\common.js"></script>
 <script>
     var questID = findGetParameter("qid");
 
@@ -70,15 +71,6 @@
         window.location.href = "./index.html";
     }
 
-    var localeNames = ['None', 'Fortress', 'Forest and Hills', 'Desert', 'Swamp', 'Volcano', 'Jungle', 'Castle Schrade', 'Battlegrounds', 'Great Arena', 'Small Arena'];
-
-    var rewardTypes = [ 'Base', 'Break Monster Part', "Break Rathian's Head", "Break Rathian's Wing", "Break Rathalos' Head", "Break Rathalos' Wing", "Unk", "Unk", "Unk", "Unk", "Break Kut-Ku's Ears", "Additional 1", "Additional 2", "Additional 3", "Additional 4", "Additional 5", "Break Lao's Horn", "Break Lao's Head", "Break Lao's Back", "Break Lao's Right Shoulder", "Break Lao's Left Shoulder", "Deliver 0", "Deliver 5", "Deliver 10", "Deliver 15", "Deliver 20", "Unk", "Unk", "Unk", "Unk", "Unk", "Unk", "Unk", "Unk", "Unk", "Unk", "Additional 1", "Additional 2", "Additional 3", "Additional 4", "Additional 5" ];
-
-    var difficulty = [ 'Low Rank', 'High Rank', ' G Rank', 'Training' ];
-
-    var stageName = [ 'None', 'Jungle 3', 'Jungle 1', 'Jungle 7', 'Jungle BC', 'Jungle 5', 'Swamp 3', 'Desert Secret', 'Battleground BC', 'Swamp 5', 'Fortress BC', 'Fortress 2', 'Fortress 5', 'NA', 'Fortress 1', 'NA', 'Swamp 1', 'NA', 'Jungle 4', 'Jungle 6', 'Schrade BC', 'FnH BC', 'Jungle 9', 'Jungle 10', 'NA', 'Schrade 1', 'Jungle 8', 'NA', 'Fortress 3', 'NA', 'Fortress 4', 'Fortress 6', 'FnH 6', 'FnH 3', 'FnH 10', 'FnH 8', 'FnH 9', 'FnH 4', 'FnH 2', 'FnH 1', 'FnH 5', 'FnH 7', 'FnH 11', 'FnH 12', 'Swamp 4', 'Desert 2', 'Jungle 2', 'Desert 6', 'Desert 9', 'Desert 8', 'Desert BC', 'Desert 1', 'Desert 4', 'Desert 10', 'Desert 5', 'Desert 11', 'Desert 7', 'Desert 3', 'Volcano 2', 'Volcano 4', 'Volcano 5', 'Volcano BC', 'Volcano 8', 'Volcano 1', 'Volcano 3', 'Volcano 6', 'Volcano 7', 'Swamp BC', 'Swamp 2', 'Swamp 9', 'Swamp 8', 'Swamp 10', 'Swamp 6', 'Swamp 11', 'Swamp Secret', 'Swamp 7', 'Minegarde Center', 'Guild Tavern', 'Market', 'Smithy', 'Guest House', 'Pawn Room', 'Rook Room', 'Bishop Room', 'Queen Room', 'King Room', 'Kokoto Room', 'Kokoto', 'Battleground 1', 'Arena BC', 'Great Arena', 'Small Arena' ];
-
-    var questTypes = ["Unknown", "Hunting", "Gathering", "Unk", "Capturing", "Unk", "Unk", "Unk", "Unk", "Special", "Unk", "Unk", "Unk", "Unk", "Unk", "Unk", "Unk", "Huntaton"];
     if(questID){
         fetch('./Quests/m'+questID+'.json',
                 {
@@ -118,7 +110,7 @@
         quest.supplyData.supplies.forEach(element => {
             var suppTr = document.createElement('tr');
             var suppTd = document.createElement('td');
-            suppTd.textContent = element.name + ' x' +element.amount;
+            suppTd.textContent = ItemNames[element.id] + ' x' +element.amount;
             suppTd.classList.add('right-align');
             suppTd.classList.add('sm-text');
             suppTr.appendChild(suppTd);
@@ -143,7 +135,7 @@
                 var rewTr = document.createElement('tr');
                 var rewTd = document.createElement('td');
                 rewTd.classList.add('sm-text');
-                rewTd.textContent = rew.name + ' x' + rew.amount + ' (' + rew.chance + '%)';
+                rewTd.textContent = ItemNames[rew.id] + ' x' + rew.amount + ' (' + rew.chance + '%)';
                 rewTd.classList.add('right-align');
                 rewTr.appendChild(rewTd);
                 rewardList.appendChild(rewTr);
@@ -170,7 +162,15 @@
                     var monTr = document.createElement('tr');
                     var monTd = document.createElement('td');
                     monTd.classList.add('sm-text');
-                    monTd.textContent = mons.name + ' (' + mons.variant + ')' + ' x' + mons.quantity + '\r\nX: ' + mons.pos[0] + ' Y: ' + mons.pos[2] + ' Z: ' + mons.pos[1];
+
+                    if(mons.id < MonsterVar.length) {
+                        console.log(MonsterVar);
+                        //console.log(MonsterVar[mons.id][mons.variant]);
+                        monTd.textContent += MonsterVar[mons.id][mons.variant];
+                    } else {
+                        monTd.textContent += mons.name + ' (' + mons.variant + ')';
+                    }
+                    monTd.textContent += ' x' + mons.quantity + '\r\nX: ' + mons.pos[0] + ' Y: ' + mons.pos[2] + ' Z: ' + mons.pos[1];
                     monTr.appendChild(monTd);
                     sMonList.appendChild(monTr);
                 });
